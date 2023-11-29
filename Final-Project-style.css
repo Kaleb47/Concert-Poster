@@ -1,12 +1,12 @@
 body {
   font-family: 'Comic Sans MS', cursive, sans-serif;
-  background-color: #FFA500;
+  background-color: #CFFF04;
 }
 
 h1, h2 {
   color: #000;
   font-size: 40px;
-  background-color: #FFA500; 
+  background-color: #CFFF04; 
 }
 
 ul {
@@ -88,7 +88,7 @@ label {
 }
 
 header {
-  background-color: #FFA500; 
+  background-color: #CFFF04; 
   font-size: 25px;
   color: #000000;
   text-align: center;
