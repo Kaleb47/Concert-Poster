@@ -1,10 +1,10 @@
 <?php
 // Database connection configuration - Needs connection (Jonathon Russell)
-$servername = "";
-$username = "";
-$password = "";
-$dbname = "";
-$port = 3306;
+$servername = "hermes.waketech.edu";
+$username = "kamarante";
+$password = "csc124";
+$dbname = "Customer";
+$port = 22;
 
 // Create a connection to the database
 $conn = new mysqli($servername, $username, $password, $dbname, $port);

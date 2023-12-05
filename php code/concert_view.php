@@ -8,9 +8,9 @@
 <?php
 // Database connection
 $servername = "hermes.waketech.edu";
-$username = "jrussell8";
+$username = "kamarante";
 $password = "csc124";
-$dbname = "Customers";
+$dbname = "Customer";
 $port = 3306;
 
 $id = $_POST['id'];
@@ -24,11 +24,11 @@ if ($conn->connect_error) {
 //Database lookup
 $sql = "SELECT Lastname, FirstName, Email, AdultTicket, ChildTicket, 
 Date, Location, Subtotal, Tax, Fee, TotalCost, CustomerID 
-FROM Customers WHERE LastName = '$name' OR CustomerID = '$id';";
+FROM Customer WHERE LastName = '$name' OR CustomerID = '$id';";
 
 $result = mysqli_query($conn, $sql);
         if (mysqli_num_rows($result) > 0) {
-            print("<p>The following record was retrieved from the Customers table:</p>");
+            print("<p>The following record was retrieved from the Customer table:</p>");
             print("<table border = \"1\">");
             print("<tr><th>LastName</th><th>FirstName</th><th>Email</th>
             <th>AdultTicket</th><th>ChildTicket></th><th>Date</th>
